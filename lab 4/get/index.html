@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <title>Моя перша HTML-форма </title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; padding: 20px; }
+    form { max-width: 720px; }
+    fieldset { border: 1px solid #ddd; border-radius: 10px; padding: 12px; margin: 12px 0; }
+    legend { color: #555; padding: 0 6px; }
+    label { display: inline-block; margin: 6px 8px 6px 0; }
+    .row { margin: 8px 0; }
+    input[type="text"], input[type="email"], input[type="date"], textarea {
+      width: 100%; max-width: 480px; padding: 8px 10px; border: 1px solid #ccc; border-radius: 8px;
+    }
+    textarea { min-height: 100px; }
+    .actions { margin-top: 10px; }
+    .actions input { margin-right: 8px; }
+    img { max-width: 100%; height: auto; display: block; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Моя перша HTML-форма (GET)</h1>
+
+  <form method="get" action="https://httpbin.org/get">
+    <fieldset>
+      <legend>Контактні дані</legend>
+
+      <div class="row">
+        <label for="user_name">Ім’я:</label><br>
+        <input type="text" id="user_name" name="user_name">
+      </div>
+
+      <div class="row">
+        <label for="user_birthdate">Дата народження:</label><br>
+        <input type="date" id="user_birthdate" name="user_birthdate">
+      </div>
+
+      <div class="row">
+        <label>Імейл:
+          <input type="email" name="user_email">
+        </label>
+      </div>
+
+      <div class="row">
+        <label for="user_message">Повідомлення:</label><br>
+        <textarea id="user_message" name="user_message"></textarea>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Ваші улюблені напої?</legend>
+      <label><input type="checkbox" name="user_drinks" value="tea"> Чай</label>
+      <label><input type="checkbox" name="user_drinks" value="coffee"> Кава</label>
+      <label><input type="checkbox" name="user_drinks" value="juice"> Сік</label>
+      <label><input type="checkbox" name="user_drinks" value="water"> Вода</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Моя національність</legend>
+      <label><input type="radio" name="user_nationality" value="ukrainian"> Українець/Українка</label>
+      <label><input type="radio" name="user_nationality" value="polish"> Поляк/Полька</label>
+      <label><input type="radio" name="user_nationality" value="other"> Інша</label>
+    </fieldset>
+
+    <div class="actions">
+      <input type="submit" value="Надіслати">
+      <input type="reset" value="Очистити">
+    </div>
+  </form>
+
+  <picture>
+    <source media="(max-width: 468px)" srcset="https://picsum.photos/300/500">
+    <img src="https://picsum.photos/1000/400" alt="Демонстраційне зображення">
+  </picture>
+</body>
+</html>
