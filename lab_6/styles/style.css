@@ -1,0 +1,62 @@
+html, body {
+  font-family: serif;
+  font-size: 14px;
+  line-height: 1.25;
+  color: #777;
+}
+
+ul ul, ul ol, ol ul, ol ol {
+  font-style: italic;
+  font-weight: 700;
+}
+
+h1, h2 {
+  font-family: 'Cormorant Infant', serif;
+  letter-spacing: 0.5px;
+  color: #000;
+  text-transform: capitalize;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 26px; }
+
+.double-line { line-height: 2; }
+
+.mail-box {
+  width: 150px;
+  background-color: #E3FFF6;
+  border: 5px solid #C2E4C2;
+  padding: 5px 20px;
+  box-sizing: border-box;
+}
+
+.mail-box, .mail-box a {
+  overflow-wrap: anywhere;
+  word-wrap: break-word;
+}
+
+.mail-box a { display: block; }
+
+p { text-align: justify; }
+
+.our-adv {
+  background-image: url('http://picsum.photos/id/357/700/400?blur=5');
+  padding-top: 30px;
+  padding-bottom: 60px;
+  color: #fff;
+  font-size: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h2 {
+  margin-top: 60px;
+  margin-bottom: 0;
+}
+
+.ruler {
+  width: 150px;
+  background-color: lime;
+  text-align: center;
+}
