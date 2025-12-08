@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 20;
+  padding: 0;
+}
+
+/* 1. addresses-wrapper padding + розміри іконок */
+.addresses-wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.address__icon {
+  width: 70px;
+}
+
+.address__status {
+  width: 32px;
+}
+/* 2. Початковий стиль address-блоку */
+.address {
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+  padding: 40px 20px;
+  border-radius: 10px;
+  background: #FFE4C4;
+  font-style: normal;
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* 3. Стилі кнопки видалення */
+.address__delete-btn {
+  background: #FF8E50;
+  color: white;
+  text-decoration: none;
+  font-size: 36px;
+  line-height: 20px;
+  padding: 10px;
+  font-weight: bold;
+  border-radius: 10px 0 0 10px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/* 4. Hover кнопки */
+.address__delete-btn:hover {
+  background: #FFD050;
+}
+
+/* 5. Позиціювання статусу */
+.address__status {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 32px;
+}
+
+/* 6. Відступ після заголовка */
+.address__header {
+  display: block;
+  margin-bottom: 10px;
+}
+/* 7. Обтікання текстом іконки адреси */
+.address__icon {
+  float: left;
+  margin-right: 10px;
+}
+
+/* 10. Відображення блоків у рядок */
+.address {
+  width: 32%;
+  margin: 1%;
+}
+
+/* 11. Вирівнювання ширини 100% усієї лінійки */
+.address:first-child {
+  margin-left: 0;
+  background: #F0FFC1;
+}
+
+.address:last-child {
+  margin-right: 0;
+  background: #B6FFDA;
+}
+
+/* 12. Hover на адресу */
+.address:hover {
+  background: #F3F3F3;
+}
+
+/* 13. Мобільна адаптація */
+@media (max-width: 767px) {
+  .addresses-wrapper {
+    flex-direction: column;
+  }
+  /* Кожен блок на всю ширину */
+  .address {
+    width: 100%;
+    margin: 0 0 20px 0; /* тільки нижній відступ */
+  }
+}

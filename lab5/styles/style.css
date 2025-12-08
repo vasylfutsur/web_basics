@@ -1,0 +1,69 @@
+/* 1. додайте клас до h1 і зробіть весь текст для класу заглавними літерами */
+.main-title {
+    text-transform: uppercase;
+}
+
+/* 2. придумайте назву класа для списку цілей і встановіть колір шрифту червоним у шістнадцятковому форматі */
+.goals-list {
+    color: #ff0000;
+}
+
+/* 3. пунктам списку цілей за класом дайте колір заднього фону yellow і нахилений шрифт */
+.goals-list .list__item {
+    background: yellow;
+    font-style: italic;
+}
+
+/* 4. для усіх впорядкованих списків задайте рамку 1px solid red */
+ol {
+    border: 1px solid red;
+}
+
+/* 5. задайте id (ідентифікатор) для заголовку першого рівня і встановіть на нього колір шрифта green */
+#mainTitle {
+    color: green;
+}
+
+/* 6. для всіх посилань на PDF-документи встановити стиль: колір зелений і font-style: italic */
+a[href$=".pdf"] {
+    color: green;
+    font-style: italic;
+}
+
+/* 7. для всіх посилань встановити колір шрифта violet та забрати підкреслення.
+   Питання: PDF лишаються зелені, бо селектор для PDF має більшу специфічність */
+a {
+    color: violet;
+    text-decoration: none;
+}
+
+/* 8. Встановіть всі заглавні літери для усіх вкладених списків другого рівня */
+ul ul, ol ol {
+    text-transform: uppercase;
+}
+
+/* 9. для всіх посилань що знаходяться всередині абзаців встановити колір шрифта magenta
+   і задній фон mistyrose */
+p a {
+    color: magenta;
+    background: mistyrose;
+}
+
+/* 10. створити клас bold який буде робити текст жирним */
+.bold {
+    font-weight: bold;
+}
+
+/* 11. для всіх тегів li з класом bold встановити всі заглавні літери */
+li.bold {
+    text-transform: uppercase;
+}
+
+/* 12. другий довгий абзац і абзац "Написати нам листа" 
+   вирівняйте по правому краю, додайте синю рамку та встановіть font-size: 20px */
+.second-paragraph,
+.mail-paragraph {
+    text-align: right;
+    border: 1px solid blue;
+    font-size: 20px;
+}
